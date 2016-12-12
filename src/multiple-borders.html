@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Translucent borders</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" type="text/css" href="./main.css">
+    <style>
+    body {
+        height: 100%;
+        margin: 20%;
+    }
+
+    div {
+        max-width: 15em;
+        min-height: 15em;
+        margin-bottom: 10em;
+    }
+
+    .multiple-borders {
+        background: yellowgreen;
+        box-shadow: 0 0 0 10px #655, 0 0 0 15px deeppink, 0 7px 7px 15px rgba(0, 0, 0, .5);
+    }
+
+    .outline-solution {
+        background: yellowgreen;
+        border: 10px solid #655;
+        outline: 15px solid deeppink;
+    }
+
+    .outline-offset {
+        background: yellowgreen;
+        outline: dashed thin;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="multiple-borders"></div>
+    <div class="outline-solution"></div>
+    <div class="outline-offset"></div>
+</body>
+
+</html>
